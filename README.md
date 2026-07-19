@@ -1,0 +1,155 @@
+[index.html](https://github.com/user-attachments/files/30158676/index.html)
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FoodExpress</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header>
+<h1> 🥥🍹CocofoodExpress</h1>
+<p>La comida que llega hasta tu puerta</p>
+</header>
+<nav>
+<button onclick="mostrar('sesion')">Iniciar sesion</button>
+<button onclick="mostrar('inicio')">Inicio</button>
+<button onclick="mostrar('menu')">Menú</button>
+<button onclick="mostrar('carrito')">Carrito</button>
+<button onclick="mostrar('pago')">Forma de pago</button>
+<button onclick="mostrar('telefono')">Numero de telefono</button>
+<button onclick="mostrar('ubicacion')">Ubicación</button>
+<button onclick="mostrar('pedido')">Finalizar pedido</button>
+</nav>
+
+<!-- SESION -->
+<section id="sesion" class="oculto">
+<h2>Inicio de sesion</h2>
+<input type="text" placeholder="Escribe tu nombre">
+<br><br>
+<input type="text" placeholder="Escribe tu contraseña">
+<br><br>
+<input type="text" placeholder="Escribe tu ubicacion">
+<br><br>
+<button onclick="alert('inicio de sesion exitoso')">
+Guardar sesion
+</button>
+</section>
+
+<!-- INICIO -->
+<section id="inicio">
+<h3>Bienvenid@</h3>
+<p>
+Pide tus comidas favoritas desde nuestra aplicación.
+Entrega rápida y segura.
+</p>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="oculto">
+<h4>Nuestro Menú</h4>
+
+<div class="card">
+<img src="img/hamburguesa.webp">
+<h3>Hamburguesa</h3>
+<p>$55</p>
+<button onclick="agregar('Hamburguesa',55)">Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="img/pizza.jpg">
+<h3>Pizza</h3>
+<p>$100</p>
+<button onclick="agregar('Pizza',100)">Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="img/fruta.jpg">
+<h3>Fruta</h3>
+<p>$40</p>
+<button onclick="agregar('fruta',40)">Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="img/sushi.webp">
+<h3>Sushi</h3>
+<p>$180</p>
+<button onclick="agregar('Sushi',180)">Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="img/tacos.jpg">
+<h3>Tacos</h3>
+<p>$95</p>
+<button onclick="agregar('Tacos',95)">Agregar al carrito</button>
+</div>
+
+<div class="card">
+<img src="img/enchiladas.webp">
+<h3>Enchiladas</h3>
+<p>$150</p>
+<button onclick="agregar('Enchiladas',150)">Agregar al carrito</button>
+</div>
+</section>
+
+
+<!-- CARRITO -->
+<section id="carrito" class="oculto">
+<h2>Carrito</h2>
+<p id="lista">
+No hay productos.
+</p>
+</section>
+
+<!-- PAGO -->
+<section id="pago" class="oculto">
+<h2>Forma de Pago</h2>
+<button onclick="alert('Pago en efectivo seleccionado')">
+Efectivo
+</button>
+<button onclick="alert('Pago con tarjeta seleccionado')">
+Tarjeta
+</button>
+</section>
+
+<!-- TELEFONO -->
+<section id="telefono" class="oculto">
+<h2>Telefono</h2>
+<input type="text" placeholder="Escribe tu numero de telefono">
+<br><br>
+<button onclick="alert('Numero guardado')">
+Guardar numero
+</button>
+</section>
+
+<!-- UBICACION -->
+<section id="ubicacion" class="oculto">
+<h2>Ubicación</h2>
+<input type="text" placeholder="Escribe tu dirección">
+<br><br>
+</div>
+
+<button onclick="alert('Ubicación guardada')">
+Guardar ubicación
+</button>
+</section>
+
+<!-- FINAL -->
+<section id="pedido" class="oculto">
+<h2>Confirmar pedido</h2>
+<p>
+Verifica que toda la información sea correcta.
+</p>
+
+<button onclick="finalizar()">
+Confirmar pedido
+</button>
+</section>
+<footer>
+CocofoodExpress © 2026
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
